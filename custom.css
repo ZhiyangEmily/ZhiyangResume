@@ -73,6 +73,10 @@ img {
   color:white;
 }
 
+.nav-list ul{
+  color:white;
+}
+
 .nav-list a {
   display: block;
   font-size: 30px;
