@@ -98,7 +98,16 @@ img {
     font-size:80%;
   }
 }
-
+@media (max-width:800px) {
+.nav {
+  flex-direction:column;}
+.nav-list {
+    align-self:left;
+  }
+  .nav-list a{
+    font-size:90%;
+  }
+}
 /*navigation ends*/
             /*This is welcome setion*/
 
@@ -145,6 +154,15 @@ img {
 @media (max-width:425px) {
 .name {
    font-size: 28px;
+  }
+}
+@media (max-width:800px) {
+.name {
+   font-size: 28px;
+  }
+.welcome-section {
+    width: 500px;
+    height: 600px;
   }
 }
 
@@ -248,7 +266,32 @@ img {
   font-size:60%;
 }
 }
+@media (max-width:800px) {
+.education-section{
+ width:500px;
+ padding-bottom:50px;
+  }
+.educontainer {
+  flex-direction:column;
+  width:600px;
+  height:200%;
+}
 
+.edudivide{
+  display:none;}
+
+.eduboxA{
+  background-image:none;
+  font-size:80%;
+}
+
+.eduboxB{
+  background-image:none;
+}
+.edubox1{
+  font-size:80%;
+}
+}
 
 /*This is Work setion*/
 .work-section {
@@ -365,6 +408,32 @@ font-size: 16px;
 }
 }
 
+@media (max-width:800px) {
+.work-section{
+ width:500px;
+ padding-bottom:50px;
+  }
+.workcontainer {
+  flex-direction:column;
+  width:600px;
+  height:200%;
+}
+.workbox2 {
+  width:60%;
+  opacity:1;
+  text-align:left;
+}
+.workboxA{
+  padding-top:30px;
+}
+.workdivide{
+  display:none;}
+
+.work-content{
+    list-style:initial;
+  }
+}
+
 /*This is Skill setion*/
 .skill-section{
  display: flex;
@@ -453,6 +522,22 @@ font-size: 16px;
   height:200%}
 
 }
+@media (max-width:800px) {
+.skill-section{
+ width:500px;
+ padding-bottom:50px;
+  }
+.skillcontainer {
+  flex-direction:column;
+  width:600px;
+  height:200%;
+}
+
+.skilldivide{
+  display:none;}
+
+}
+
 /*This is Contact setion*/
 .contact-section {
   display:flex;
@@ -555,6 +640,22 @@ a:hover, a:active {
   align-self:center;}
 
 }
+@media (max-width:800px){
+.contact-section{
+  width:500px;
+}
+.contactboxB{
+    display:none;}
+
+.contactcontainer{
+  flex-direction:column;
+}
+.contactboxA {
+  flex-direction:column;
+  font-size:60%;
+  align-self:center;}
+
+}
 /* This is Footer*/
 footer {
   font-weight: 300;
@@ -568,9 +669,16 @@ footer > p {
   margin: 2rem;
 }
 
-@media (max-width: 28.75em) {
+@media (max-width: 425px) {
   footer {
     text-align: center;
   }
+}
+@media (max-width: 800px) {
+  footer {
+    text-align: center;
+    width:435px;
+  }
+
 }
 </style>
