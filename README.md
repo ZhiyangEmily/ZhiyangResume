@@ -1,16 +1,20 @@
 # ZhiyangResume
 Zhiyang's Resume with html &amp; CSS
 
-#### Website's goal
+## Website's goal
 
-#### First impression
+### goal for myself
 
-#### Wording is clear and crisp
+### goal for my audience
 
-#### mobile version maintains clarity of essential elements
+## First impression
 
-#### Asthetics is authentic and original
+## Wording is clear and crisp
 
-#### Sideration of various visual design elements 
+## mobile version maintains clarity of essential elements
+
+## Asthetics is authentic and original
+
+#### Consideration of various visual design elements 
 
 #### Layout, navigation and information hierarchy
