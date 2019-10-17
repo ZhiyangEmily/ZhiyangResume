@@ -11,15 +11,27 @@
   <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"/>
+	<link href="https://cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 </head>
 
 <nav id="navbar" class="nav">
-<ul class="nav-list">
-  <li>
-    <a href="#welcome-section">Home</a>
-  </li>
-  <li><a href="#contact-section">Contact</a></li>
-</ul>
+  <div class="logo">
+    <h3> Zhiyang's Resume <h3>
+  </div>
+
+  <ul class="nav-list">
+    <li><a href="#welcome-section">Home</a></li>
+    <li><a href="#contact-section">Contact</a></li>
+    <li><a href="#education-section">Education</a></li>
+    <li><a href="#work-section">Work</a></li>
+    <li><a href="#skill-section">Skill</a></li>
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
 </nav>
 
 <body>
@@ -149,6 +161,40 @@
     </div>
 </div>
 
+<div id="gallery-section" class="gallery-section">
+  <div class="inner-width">
+    <h2> My Life </h2>
+
+    <div class="border"></div>
+    <div class="gallery">
+      <a href="image/001.png" class="image">
+        <img src="image/001.png" alt="人物1" />
+      </a>
+      <a href="image/04.png" class="image">
+        <img src="image/04.png" alt="景色4" />
+      </a>
+      <a href="image/002.png" class="image">
+        <img src="image/002.png" alt="人物2" />
+      </a>
+      <a href="image/02.png" class="image">
+        <img src="image/02.png" alt="景色2" />
+      </a>
+      <a href="image/03.png" class="image">
+        <img src="image/03.png" alt="景色3" />
+      </a>
+      <a href="image/003.png" class="image">
+        <img src="image/003.png" alt="人物3" />
+      </a>
+      <a href="image/01.png" class="image">
+        <img src="image/01.png" alt="景色1" />
+      </a>
+      <a href="image/004.png" class="image">
+        <img src="image/004.png" alt="人物4" />
+      </a>
+    </div>
+  </div>
+</div>
+
 <div id="contact-section" class="contact-section">
   <div class="contactcontainer">
     <div class="contactboxA">
@@ -174,7 +220,10 @@
     </div>
   </div>
 </div>
+  <!-- my custom js file is linked below -->
+  <script src="main.js"></script>
 </body>
+
 
 <footer>
   <p class="footer">Created by Zhiyang Wang for MSTU 5003 </p>

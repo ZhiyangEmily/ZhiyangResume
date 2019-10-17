@@ -55,59 +55,88 @@ img {
 }
 
          /*this is navigation section*/
-.nav {
+nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items:center;
   position: fixed;
-  top: 0;
-  left: 0;
+  top:0;
   width: 100%;
-  background:#546c8c;
-  z-index: 10;
-  color:white;
+  background-color:#546c8c;
+  min-height:8vh;
 }
+.logo {
+  color:rgb(226,226,226);
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:20px;
 
+}
 .nav-list {
   display: flex;
-  margin-right: 25px;
-  color:white;
+  justify-content:space-around;
+  width:30%;
 }
-
-.nav-list ul{
-  color:white;
+.nav-list li{
+  list-style:none;
 }
-
-.nav-list a {
-  display: block;
-  font-size: 30px;
-  padding:0 20px;
-  color:white;
+.nav-list a{
+  color:rgb(226,226,226);
+  text-decoration:none;
+  font-weight:bold;
+  font-size:18px;
 }
-
-.nav-list a:hover {
+.nav-list a:visited{
+  color:rgb(226,226,226);
+}
+.nav-list a:hover{
   color:#FFB471;
 }
 
+.burger{
+  display:none;
+  cursor:pointer;
+}
+
+.burger div{
+  width:20px;
+  height:3px;
+  background-color:rgb(226,226,226);
+  margin:5px;
+}
+
 @media (max-width:425px) {
-.nav {
-  flex-direction:column;}
-.nav-list {
-    align-self:center;
+  nav{
+    overflow-x:hidden;
   }
-  .nav-list a{
-    font-size:80%;
+  .nav-list {
+    position:absolute;
+    right:0px;
+    height:92vh;
+    top:8vh;
+    background-color:#546c8c;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:30%;
+    transform:translate(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity:0;
+  }
+  .burger{
+    display:block;
   }
 }
-@media (max-width:800px) {
-.nav {
-  flex-direction:column;}
-.nav-list {
-    align-self:left;
-  }
-  .nav-list a{
-    font-size:90%;
+
+@media (max-width:1000px) {
+  .nav-list {
+    width:60%;
   }
 }
+
+
 /*navigation ends*/
             /*This is welcome setion*/
 
@@ -655,6 +684,60 @@ a:hover, a:active {
   font-size:60%;
   align-self:center;}
 
+}
+
+.gallery-section {
+  width: 100%;
+  padding: 60px 0;
+  background: #f1f1f1;
+}
+.inner-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.gallery-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+}
+.border {
+  width: 180px;
+  height: 4px;
+  background: #333;
+  margin: 30px auto;
+}
+.gallery-section .gallery {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+.gallery-section .image {
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gallery-section .image img {
+  transition: 0.4s;
+}
+.gallery-section .image:hover img {
+  transform: scale(1.4) rotate(15deg);
+}
+@media screen and (max-width: 960px) {
+  .gallery-section .image {
+    flex: 33.33%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gallery-section .image {
+    flex: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gallery-section .image {
+    flex: 100%;
+  }
 }
 /* This is Footer*/
 footer {
